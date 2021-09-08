@@ -1,7 +1,7 @@
 ## WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
 
 ### Goal
-The goal of this project is to analyze the MTA data in order to provide optimum placement recommendations for street teams to build awareness for the WTWY.  In addition to buiding awareness, the street teams will collect email addresses of individuals who demonstrae a passionate interest in increasing women in technology.  These individuals will be sent an invitation to the annual summer gala fundraising event which will benefit the WTWY organization.
+The goal of this project is to analyze the MTA turnstile data in order to provide optimum placement recommendations for street teams to build awareness for the WTWY.  In addition to buiding awareness, the street teams will collect email addresses of individuals who demonstrae a passionate interest in increasing women in technology.  These individuals will be sent an invitation to the annual summer gala fundraising event which will benefit the WTWY organization.
 * A min, max and average number of voluteers needed at specific times may be an outcome of this analysis.
 
 ### Dataset 
