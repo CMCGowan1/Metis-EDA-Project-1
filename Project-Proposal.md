@@ -1,4 +1,4 @@
-### WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
+# WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
 
 ## Goals
 The goal of this project is analyze the MTA data in order to provide optimum placement recommendations for street teams to build awareness for the 
