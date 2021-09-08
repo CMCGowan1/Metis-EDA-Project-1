@@ -1,27 +1,22 @@
-## WomenTechWomenYes(WTWY) Street Team Placement Analysis 
+### WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
 
+## Goals
 The goal of this project is analyze the MTA data in order to provide optimum placement recommendations for street teams to build awareness for the 
-WomenTechWomenYes organization.  
-The street teams will also collect email addresses of individuals who are passionate about increasing women in technology.  These individuals will be sent and 
-inviitation to the annual summer gala fundraising event.
+WomenTechWomenYes organization. A recommended number of voluteers needed at specific times may be an outcome of this analysis.
 
-  a list of subway stations to position volunteers during specific times
-  to collect email addresses of people supportive of expanding the number of women in technology 
-  these email addresses will be used to send invitations to the Gala event 
-  attendance at the Gala event will show support and somme may have interest in contributing financially to the organization.Project Proposal Template
+In addition to buiding awareness, the street teams will collect email addresses of individuals who demonstrae a passionate interest in increasing women in technology.  These individuals will be sent an invitation to the annual summer gala fundraising event.
 
-Before you start project work for a course, you should be able to complete the following proposal template, addressing the questions listed as completely as possible. However, keep in mind that throughout the design iterations of your project, many parts of it will likely change (i.e. increase/decrease in number of samples, types of features or algorithm used, etc), so this is just a starting point. Also, if you are unsure in some areas, you should still submit a partial proposal to receive feedback from instructors.
+## Dataset 
+The MTA public turnstyle data set will be used for this analysis.  The data is segmented in 4-hour increments.  Time frames for exit data between 4:00am and 8:00am may indicate arrival at the office and entry data between 4:00pm(16:00) AND 8:00pm(20:00) could idicate return from office.  These time frames may capture working professions on their work commute.  Focusing on exit data in am may be the best souce as commuters won't be rushing to a train and have time to learn aboutu WTWY>. Note: The Pandemic may have a negative impace on these assumptions as work from home is becoming more popular.
 
-In addition to submitting this plan, you may discuss the areas below with an instructor in a scope meeting.
+Stretch Goal: If available merging the MTA data with major tech employers office location and proximity to stations could be valuable to fine tune street team placement. 
 
-Question/need:
+## MVP Goal:
+  A visualization of the data indicating the stations with the highest exit traffic between the hours of 4:00am and 8:00am using SQLite.
 
-What is the framing question of your analysis, or the purpose of the model/system you plan to build? 
-WHAT STATIONS TO PLACE PEOPLE AT TO COLLECT NAMES FOR THE WOMEN IN TECH GALA?
-HOW MANY VOLUNTEERS WILL BE NEEDED FOR MIN, AVERAGE AND MAX COVERAGE?
-WHAT TIMES SHOULD THE VOLUNTEERS BE WORKING?
-WILL THE VOLUNTEERS FOCUS ON PEOPLE EXITING OR ENTERING THE STATIONS?
-WHICH WAY SHOULD THE TABLE BE FACING?
+
+
+
 
 Who benefits from exploring this question or building this model/system? 
 THE CLIENT, THE WOMENT IN TECH GALA EVENT
@@ -47,7 +42,6 @@ Are you planning in advance to need or use additional tools beyond those require
 
 MVP Goal:
 
-What would a minimum viable product (MVP) look like for this project?
 A VISUALIZATION OF THE DATA INDICATING THE LOCATIONS WITH THE HIGHEST TRAFFIC STATIONS
 MAP OF THE SUBWAY STATIONS MARKED WITH A RED DOT OF WHERE TO PLACE THE VOLUNTEERS
 A SCHEDULE FOR VOLUNTEERS TO BE AT THE STATION
