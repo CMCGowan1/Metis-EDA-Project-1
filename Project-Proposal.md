@@ -1,4 +1,14 @@
-Project Proposal Template
+## WomenTechWomenYes(WTWY) Street Team Placement Analysis 
+
+The goal of this project is analyze the MTA data in order to provide optimum placement recommendations for street teams to build awareness for the 
+WomenTechWomenYes organization.  
+The street teams will also collect email addresses of individuals who are passionate about increasing women in technology.  These individuals will be sent and 
+inviitation to the annual summer gala fundraising event.
+
+  a list of subway stations to position volunteers during specific times
+  to collect email addresses of people supportive of expanding the number of women in technology 
+  these email addresses will be used to send invitations to the Gala event 
+  attendance at the Gala event will show support and somme may have interest in contributing financially to the organization.Project Proposal Template
 
 Before you start project work for a course, you should be able to complete the following proposal template, addressing the questions listed as completely as possible. However, keep in mind that throughout the design iterations of your project, many parts of it will likely change (i.e. increase/decrease in number of samples, types of features or algorithm used, etc), so this is just a starting point. Also, if you are unsure in some areas, you should still submit a partial proposal to receive feedback from instructors.
 
