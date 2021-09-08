@@ -1,2 +1,5 @@
-The goal of this project is to determine the optimal number of subway stations to have volunteers at to collect email addresses in order to create a database 
-used for sending invitations to the Women In Tech Gala fundraising event.
+The goal of this project is analyze the MTA data in order to provide:
+  a list of subway stations to position volunteers during specific times
+  to collect email addresses of people supportive of expanding the number of women in technology 
+  these email addresses will be used to send invitations to the Gala event 
+  attendance at the Gala event will show support and somme may have interest in contributing financially to the organization.
