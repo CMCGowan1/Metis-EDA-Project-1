@@ -1,13 +1,13 @@
 ## WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
 
-### Goals
+### Goal
 The goal of this project is to analyze the MTA data in order to provide optimum placement recommendations for street teams to build awareness for the 
 WomenTechWomenYes organization.  A recommended number of voluteers needed at specific times may be an outcome of this analysis.
 
 In addition to buiding awareness, the street teams will collect email addresses of individuals who demonstrae a passionate interest in increasing women in technology.  These individuals will be sent an invitation to the annual summer gala fundraising event.
 
 ### Dataset 
-The MTA public turnstyle data set will be used for this analysis.  The data is segmented in 4-hour increments.  Time frames for exit data between 4:00am and 8:00am may indicate arrival at the office and entry data between 4:00pm(16:00) AND 8:00pm(20:00) could idicate return from office.  These time frames may capture working professions on their work commute.  Focusing on exit data in am may be the best souce as commuters won't be rushing to a train and have time to learn aboutu WTWY>. Note: The Pandemic may have a negative impace on these assumptions as work from home is becoming more popular.
+The MTA public turnstyle data set will be used for this analysis.  The data is segmented in 4-hour increments.  Time frames for exit data between 4:00am and 8:00am may indicate arrival at the office and entry data between 4:00pm(16:00) AND 8:00pm(20:00) could idicate return from the office.  These time frames may capture working professions on their work commute.  Focusing on exit data in am may be the best souce as commuters won't be rushing to a train and have time to learn aboutu WTWY>. Note: The Pandemic may have a negative impace on these assumptions as work from home is becoming more popular.
 
 Stretch Goal: If available merging the MTA data with major tech employers office location and proximity to stations could be valuable to fine tune street team placement. 
 
