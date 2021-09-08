@@ -5,7 +5,7 @@ The goal of this project is to analyze the MTA turnstile data in order to provid
 * A min, max and average number of voluteers needed at specific times may be an outcome of this analysis.
 
 ### Dataset 
-The MTA public turnstile data set will be used for this analysis.  The data is segmented in 4-hour increments.  Time frames for exit data between 4:00am and 8:00am may indicate arrival at the office and entry data between 4:00pm(16:00) AND 8:00pm(20:00) could idicate return from the office.  These time frames may capture working professions on their work commute.  Focusing on exit data in am may be the best souce as commuters won't be rushing to a train and have time to learn aboutu WTWY. 
+The MTA public turnstile data set will be used for this analysis.  The data is segmented in 4-hour increments.  Time frames for exit data between 4:00am and 8:00am may indicate arrival at the office and entry data between 4:00pm(16:00) AND 8:00pm(20:00) could idicate return from the office.  These time frames may capture working professions on their work commute.  Focusing on exit data in am may be the best souce as commuters won't be rushing to a train and have time to learn about WTWY. 
 * Note: The Pandemic may have a negative impace on these assumptions as work from home is becoming more popular.
 
 Stretch Goal: If available merging the MTA data with major tech employers office location and proximity to stations could be valuable to fine tune street team placement. 
