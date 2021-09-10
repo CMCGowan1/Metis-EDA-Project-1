@@ -1,20 +1,24 @@
 # Subway Station Analysis for Street Team Placement for WTWY
 
-Arjun Sudhir
+Cheryl McGowan
 
-Abstract
+### Abstract
 
 The goal of this project was to use classification models to predict the operating condition of waterpoints in Tanzania in order to help improve operations and maintenance planning of these units. I worked with data provided by Taarifa and the Tanzanian Ministry of Water, leveraging geographic and categorical feature engineering along with a random forest model to achieve promising results for this multiclass problem. After refining a model, I built an interactive dashboard to visualize and communicate my results using Tableau.
 
-Design
+### Design
 
-This project originates from the DrivenData competition "Pump it Up: Data Mining the Water Table". The data is provided by Taarifa and the Tanzanian Ministry of Water, and presents a three-class operational status of functional, functional needs repair, and non-functional for waterpoints across the country. Classifying statuses accurately via machine learning models would enable the Tanzanian Ministry of Water to take action to improve operations and maintenance planning of these units, allocate resources more quickly to needed areas, and ensure potable water is accessible to as many people as possible.
+This project originates as a client request from WTWY.  
 
-Data
+from the DrivenData competition "Pump it Up: Data Mining the Water Table". The data is provided by Taarifa and the Tanzanian Ministry of Water, and presents a three-class operational status of functional, functional needs repair, and non-functional for waterpoints across the country. Classifying statuses accurately via machine learning models would enable the Tanzanian Ministry of Water to take action to improve operations and maintenance planning of these units, allocate resources more quickly to needed areas, and ensure potable water is accessible to as many people as possible.
 
-The dataset contains 59,400 waterpoints with 40 features for each, 32 of which are categorical. A few feature highlights include measurements of water quantity and quality, pump types, and latitude/longitude coordinates. Nearly a third of the individual features could be grouped into more general categories, and an in-depth analysis of 20 of them was undertaken to inform baseline models and feature engineering.
+### Data
 
-Algorithms
+The dataset is from the public mta data set of turnstile records for 6 months from Jan 1, 2021 to June 30, 2021.  It contains x number of rows from x number of stations 
+
+59,400 waterpoints with 40 features for each, 32 of which are categorical. A few feature highlights include measurements of water quantity and quality, pump types, and latitude/longitude coordinates. Nearly a third of the individual features could be grouped into more general categories, and an in-depth analysis of 20 of them was undertaken to inform baseline models and feature engineering.
+
+### Algorithms
 
 Feature Engineering
 
