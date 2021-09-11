@@ -14,7 +14,7 @@ from the DrivenData competition "Pump it Up: Data Mining the Water Table". The d
 
 ### Data
 
-The dataset is from the public mta data set of turnstile records for 6 months from Jan 1, 2021 to June 30, 2021.  It contains x number of rows from x number of stations 
+The dataset is from the public mta data set of turnstile records for 6 months from Jan 1, 2021 to June 30, 2021.  It contains x number of rows from x number of stations.  One observation is the number of entries and exits collected at a turnsile for an increment of time, usually 4 hour blocks. The features of this table are the column headers.
 
 59,400 waterpoints with 40 features for each, 32 of which are categorical. A few feature highlights include measurements of water quantity and quality, pump types, and latitude/longitude coordinates. Nearly a third of the individual features could be grouped into more general categories, and an in-depth analysis of 20 of them was undertaken to inform baseline models and feature engineering.
 
