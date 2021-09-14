@@ -6,7 +6,8 @@ The goal of this project is to better understand which NYC area MTA subway stati
 
 To start exploring this goal, I used the publically available MTA database for turnstile data from 1/1/2021 to 9/3/2021 
 
-##EXAMPLE
+
+## EXAMPLE
 w datalinear regression model with one feature to describe Box Office Total Domestic Gross as a function of the Budget of a Movie.
 
 The figure depicts the model (red) plotted against the actual data points. The prediction interval is plotted in green.
