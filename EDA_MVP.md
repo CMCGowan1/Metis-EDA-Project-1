@@ -6,7 +6,7 @@ The goal of this project is to better understand which NYC area MTA subway stati
 
 To start exploring this goal, I used the publically available MTA database for turnstile data from 1/1/2021 to 9/3/2021 
 
-https://github.com/CMCGowan1/Metis-EDA-Project-1/blob/main/entries_per_station.png?raw=true![image](https://user-images.githubusercontent.com/18155025/133335076-b5876f9d-53f5-4cf2-b26a-2e3125064667.png)
+![image](https://user-images.githubusercontent.com/18155025/133335076-b5876f9d-53f5-4cf2-b26a-2e3125064667.png)
 
 
 
