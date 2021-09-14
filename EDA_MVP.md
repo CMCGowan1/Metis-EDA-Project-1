@@ -8,6 +8,7 @@ Pandas and matplotlib were used to clean, filter, sort and visualize the data
 
 ![image](https://user-images.githubusercontent.com/18155025/133335076-b5876f9d-53f5-4cf2-b26a-2e3125064667.png)
 
+![image](https://user-images.githubusercontent.com/18155025/133337561-ca280aae-90b3-4206-bf11-8380469bd50f.png)
 
 
 
