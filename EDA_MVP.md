@@ -1,6 +1,6 @@
 ## WomenTechWomenYes(WTWY) - Street Team Placement Initial Analysis 
 
-The goal of this project is to better understand which NYC area MTA subway stations have the most traffic and specifically which turnstiles per station have the most ENTIRES/EXITS traveling 4:OOam and 8:00pm Eastern.  This analysis will provide insight into the minimum, maximum and average number of volunteers needed to cover the high velocity turnsitles at the station's with the most traffic.  The desired outcome is to give the street teams the opportuntiy to connect with the highest number of individuals possible to gather email addresses of people supportive of attending the annual gala and/or donate to the organization.
+The goal of this project is to better understand which NYC area MTA subway stations have the most traffic and specifically which turnstiles per station have the most ENTIRES/EXITS between 4:OO and 20:00(4:00am - 8:00pm Eastern).  This analysis will provide insight into the minimum, maximum and average number of volunteers needed to cover the high velocity turnsitles at the station's with the most traffic.  The desired outcome is to give the street teams the opportuntiy to connect with the highest number of individuals possible to gather email addresses for people supportive of attending the annual gala and/or donating to the organization.
 
 
 
