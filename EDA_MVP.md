@@ -1,10 +1,13 @@
-## WomenTechWomenYes(WTWY) - Street Team Placement Analysis 
+## WomenTechWomenYes(WTWY) - Street Team Placement Initial Analysis 
 
 The goal of this project is to better understand which NYC area MTA subway stations have the most traffic and specifically which turnstiles per station have the most ENTIRES/EXITS traveling between 4:OOam and 8:00pm Eastern.  This analysis will provide insight into the minimum, maximum and average number of volunteers needed to cover the high velocity turnsitles at the station's with the most traffic.  The desired outcome is to give the street teams the opportuntiy to connect with the highest number of individuals possible to gather email addresses of people supportive of attending the annual gala and/or donate to the organization.
 
 
 
-To start exploring this goal, I used a linear regression model with one feature to describe Box Office Total Domestic Gross as a function of the Budget of a Movie.
+To start exploring this goal, I used the publically available MTA database for turnstile data from 1/1/2021 to 9/3/2021 
+
+##EXAMPLE
+w datalinear regression model with one feature to describe Box Office Total Domestic Gross as a function of the Budget of a Movie.
 
 The figure depicts the model (red) plotted against the actual data points. The prediction interval is plotted in green.
 
