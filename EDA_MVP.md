@@ -11,6 +11,8 @@ Pandas and matplotlib were used to clean, filter, sort and visualize the data
 
 
 
-Pandas and matplotlib were used to clean, filter, sort and visualize the data.  One feature that describes the data is total entries per station YTD 9/3/2021
+Pandas and matplotlib were used to clean, filter, sort and visualize the data.  One feature that describes the data is total entries per station YTD 9/3/2021.
 
 The results suggest the highest volume of traffic is at 34th Street Penn Station.  Positioning volunteers at this station will be important to capturing people interested in supporting women in technology.
+
+Note: Traffic volume is represented in scientific notation this value will be made clearer in the presentation.  
