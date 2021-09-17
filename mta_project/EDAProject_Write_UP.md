@@ -1,71 +1,44 @@
-# Subway Station Analysis for Street Team Placement for WTWY
+# Subway Station Analysis for Street Team Placement for WomenTechWomenYes (WTWY)
 
 Cheryl McGowan
 
 ### Abstract
 
-The goal of this project was to use MTA subway turnstile data to  identify locations for the WomenTechWomenYes organization to recommend placement of street teams to maximize email address collection points in NYC.  The data was cleaned up for reverse station entries, duplicates and outliers.  The information was plotted on a bar graph using Matplotlib.  I compared the stations with the most traffic to commercial real estate maps showing the locations of big tech and start-up tech companies. The commercial data is based on lease activity and real estate purchases for the tech sector.
+The goal of this project is to use the publicly available MTA subway turnstile dataset to identify optimum locations for the WomenTechWomenYes organization for placement of street teams to maximize email address collection points in NYC.  The data was cleaned up for reverse station entries, duplicates and outliers.  The information was plotted on a bar graph using Matplotlib and a subset of the STATION data focused on Big Tech Office locations was graphed using Seaborne.  I compared the stations with the most traffic to commercial real estate maps showing the locations of big tech and start-up tech companies. The commercial data is based on lease activity and real estate purchases for the tech sector companies Amazon, Apple, Facebook, Google and Netflix.  A recommendation for 15 total street teams is made and the teams are assigned to best cover the stations with the most traffic close to Big tech Office locations.   
 
 ### Design
 
-This project originates as a client request from WTWY.  
-
-from the DrivenData competition "Pump it Up: Data Mining the Water Table". The data is provided by Taarifa and the Tanzanian Ministry of Water, and presents a three-class operational status of functional, functional needs repair, and non-functional for waterpoints across the country. Classifying statuses accurately via machine learning models would enable the Tanzanian Ministry of Water to take action to improve operations and maintenance planning of these units, allocate resources more quickly to needed areas, and ensure potable water is accessible to as many people as possible.
+This project originates as a client request from WTWY.  The design of the project focused on filtering and summing the data for cumulative daily entries.  This data was used to identify stations with the highest volume of traffic.  This station list was then compared to Big Tech Office locations and a subset of stations was identified with close proximity to Big Tech Office locations.  This dataset was used to make recommendations to WTWY for an optimum number of street teams of 15 to cover offices for Google, Amazon, Apple, Facebook and Netflix.  
 
 ### Data
 
-The dataset is from the public MTA data set of turnstile records for 6 months from Jan 1, 2021 to Sept 3, 2021.  It contains over 7 million entries or rows from 379 stations.  One observation is the cumulative number of daily entries collected at a turnstile for a 24 hour period. The features of this data are C/A UNIT, SCP, STATION, LINENAME, DIVISION, DATE, TIME, DESc, ENTRIES AND EXITS.
+The data is provided by the Metro Transit Authority (MTA) with each row representing turnstile data collected in approximately 4 hour increments.  The data has some irregularities regarding data collected in reverse order resulting in negative totals, duplicate entries and abnormally high values that skewed the analysis.  These incidences were identified and corrected or removed from the data set.  The dataset contains records for a little over 8 months from Jan 1, 2021 to Sept 3, 2021.  It has over 7 million entries or rows from 379 stations.  One observation is the cumulative number of daily entries collected at a turnstile for a 24 hour period. The features of this data are C/A UNIT, SCP, STATION, LINENAME, DIVISION, DATE, TIME, DESC, ENTRIES AND EXITS.  The primary ket consists of C/A UNIT, SCP, STATION, and a new column for DATETIME.
 
-
-calculations for PREV_DATE, PREV_ENTRIES, AND DAILY_ENTRIES are shown in the column headers.
-
-C/A represents Control areas
-UNIT is a remote unit for a station
-SCP is a specific turnstile device
-STATION is the station location where the device is located
-
-59,400 waterpoints with 40 features for each, 32 of which are categorical. A few feature highlights include measurements of water quantity and quality, pump types, and latitude/longitude coordinates. Nearly a third of the individual features could be grouped into more general categories, and an in-depth analysis of 20 of them was undertaken to inform baseline models and feature engineering.
+C/A      = Control Area (A002)
+UNIT     = Remote Unit for a station (R051)
+SCP      = Subunit Channel Position represents an specific address for a device (02-00-00)
+STATION  = Represents the station name the device is located at
+LINENAME = Represents all train lines that can be boarded at this station
+           Normally lines are represented by one character.  LINENAME 456NQR repersents train server for 4, 5, 6, N, Q, and R trains.
+DIVISION = Represents the Line originally the station belonged to BMT, IRT, or IND   
+DATE     = Represents the date (MM-DD-YY)
+TIME     = Represents the time (hh:mm:ss) for a scheduled audit event
+DESc     = Represent the "REGULAR" scheduled audit event (Normally occurs every 4 hours)
+           1. Audits may occur more that 4 hours due to planning, or troubleshooting activities.
+           2. Additionally, there may be a "RECOVR AUD" entry: This refers to a missed audit that was recovered.
+ENTRIES  = The comulative entry register value for a device
+EXIST    = The cumulative exit register value for a device
 
 ### Algorithms
 
-Feature Engineering
-
-Mapping latitude and longitude to 3-dimensional coordinates so nearby continuous values would also be close in reality
-Converting categorical features to binary dummy variables
-Combining particular dummies and ranges of numeric features to highlight strong signals and illogical values for waterpoint status identified during EDA
-Selecting subsets of the total unique values for categorical features that were converted to dummies, according to the number of samples they were associated with and their contribution to certain statuses
-Models
-
-Logistic regression, k-nearest neighbors, and random forest classifiers were used before settling on random forest as the model with strongest cross-validation performance. Random forest feature importance ranking was used directly to guide the choice and order of variables to be included as the model underwent refinement.
+Calculations for DAILY_ENTRIES are shown in the column headers.
 
 ### Tools
+
+The data science tools utilized are SQLite, pandas, matplotlib, and seaborne.
 
 ### Communication
 
 Model Evaluation and Selection
 
-The entire training dataset of 59,400 records was split into 80/20 train vs. holdout, and all scores reported below were calculated with 5-fold cross validation on the training portion only. Predictions on the 20% holdout were limited to the very end, so this split was only used and scores seen just once.
-
-The official metric for DrivenData was classification rate (accuracy); however, class weights were included to improve performance against F1 score and provide a more useful real-world application where classification of the minority class (functional needs repair) would be essential.
-
-Final random forest 5-fold CV scores: 99 features (7 numeric) with class weights
-
-Accuracy 0.797
-F1 0.791 micro, 0.679 macro
-precision 0.792 micro, 0.722 macro
-recall 0.797 micro, 0.658 macro
-Holdout
-
-Accuracy: 0.802
-F1: 0.795 micro, 0.685 macro
-Precision: 0.796 micro, 0.725 macro
-Recall: 0.802 micro, 0.664 macro
-Tools
-
-Numpy and Pandas for data manipulation
-Scikit-learn for modeling
-Matplotlib and Seaborn for plotting
-Tableau for interactive visualizations
-Communication
-
-In addition to the slides and visuals presented, Tanzania Waterpoints will be embedded on my personal website and blog.
+Bar charts were created to show station volume for top stations and for stations in the Big Tech Office locations areas.  Future analysis is needed to identify data sets for commercial real estate to be used to update the maps for refining optimal street team placement.
